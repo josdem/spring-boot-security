@@ -20,7 +20,7 @@ class LoginController {
     log.info "Calling login"
     ModelAndView modelAndView = new ModelAndView('login/login')
     if(error.isPresent()){
-      modelAndView.addObject('error', 'Login Error')
+      modelAndView.addObject('error', 'Invalid Credentials')
     }
     modelAndView
   }
