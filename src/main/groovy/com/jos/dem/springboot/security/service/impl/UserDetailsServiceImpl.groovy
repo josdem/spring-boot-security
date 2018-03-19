@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UsernameNotFoundException
 
+import  com.jos.dem.springboot.security.model.User
 import  com.jos.dem.springboot.security.service.UserService
 
 @Service
