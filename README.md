@@ -1,7 +1,7 @@
 Spring Boot Security
 ----------------------------
 
-This project shows how to use Spring Security in-Memory and Database authentication in a Spring Boot project
+This project shows how to implement in-Memory and Database authentication in a Spring Boot project
 
 
 #### To run the project
