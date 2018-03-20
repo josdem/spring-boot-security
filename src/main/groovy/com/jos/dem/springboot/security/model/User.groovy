@@ -20,9 +20,9 @@ class User {
   @Column(nullable = false)
   String password
   @Column(nullable = true)
-  String firstName
+  String firstname
   @Column(nullable = true)
-  String lastName
+  String lastname
   @Column(nullable = true)
   String email
   @Column(nullable = false)

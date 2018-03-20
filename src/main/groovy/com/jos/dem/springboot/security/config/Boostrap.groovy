@@ -8,6 +8,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
 
 import com.jos.dem.springboot.security.model.User
 import com.jos.dem.springboot.security.model.Role
+import com.jos.dem.springboot.security.repository.UserRepository
+
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
 @Component
 class Boostrap implements ApplicationListener<ApplicationReadyEvent>{
@@ -15,8 +19,11 @@ class Boostrap implements ApplicationListener<ApplicationReadyEvent>{
   @Autowired
   UserRepository userRepository
 
+  Logger log = LoggerFactory.getLogger(this.class)
+
   @Override
   void onApplicationEvent(final ApplicationReadyEvent event) {
+    log.info 'Verifying if default user exist'
     createUserWithRole('josdem', '12345678', 'joseluis.delacruz@gmail.com', Role.USER)
   }
 
