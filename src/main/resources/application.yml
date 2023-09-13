@@ -1,3 +1,11 @@
 credentials:
   username: "josdem"
   password: "12345678"
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost/spring_boot_security"
+    username: "username"
+    password: "password"
+    driver-class-name: "com.mysql.jdbc.Driver"
+  jpa:
+    generate-ddl: true
